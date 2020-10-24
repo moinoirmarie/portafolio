@@ -1,3 +1,46 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    background: #ffffff;
+    color: #9D8FBC;
+    width: 80%;
+    margin: auto;
+    /*Flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    background: #ffffff;
+    border: none;
+}
+
+footer {
+    padding: 0;
+}
+
+.grid {
+    border: 1px solid #9D8FBC;
+    border-width: 1px 0 0 1px;
+}
+
+.grid div {
+    border: 1px solid #9D8FBC;
+    border-width: 0 1px 1px 0;
+    float: left;
+}
