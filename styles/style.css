@@ -30,17 +30,43 @@ header {
     border: none;
 }
 
+section {
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    /*Grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+section .door {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+section .couch {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+section .about {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+section .phone {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
 footer {
-    padding: 0;
-}
-
-.grid {
-    border: 1px solid #9D8FBC;
-    border-width: 1px 0 0 1px;
-}
-
-.grid div {
-    border: 1px solid #9D8FBC;
-    border-width: 0 1px 1px 0;
-    float: left;
+    background-image: url(img/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #63518A;
+    /*Flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
