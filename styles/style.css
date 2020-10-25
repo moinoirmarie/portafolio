@@ -45,6 +45,60 @@ button {
     background-size: cover;
 }
 
+section main figure {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 120px;
+    margin: 0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+
+section main > figure {
+    position: relative;
+    left: 0 !important;
+}
+
+section main img {
+    display: block;
+    width: 120px;
+}
+
+section main input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 100;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+section main input:checked {
+    width: 5px;
+    left: auto;
+    right: 0;
+}
+
+section main input:checked ~ figure {
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    left: 120px;
+}
 
 section {
     background: #ffffff;
