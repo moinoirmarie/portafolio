@@ -45,6 +45,13 @@ button {
     background-size: cover;
 }
 
+section main {
+    width: 270px;
+	margin: auto;
+	overflow: hidden;
+	border-bottom: 12px solid #FA4444;
+}
+
 section main figure {
     position: absolute;
     top: 0;
@@ -99,6 +106,7 @@ section main input:checked ~ figure {
     transition: all 0.7s ease-in-out;
     left: 120px;
 }
+
 
 section {
     background: #ffffff;
