@@ -17,7 +17,8 @@
 header {
     background: #ffffff;
     color: #9D8FBC;
-    width: 80%;
+    width: 70%;
+    padding-bottom: 3%;
     margin: auto;
     /*Flex*/
     display: flex;
@@ -25,14 +26,16 @@ header {
     justify-content: space-between;
 }
 
+
 .menu {
     background: #ffffff;
     border: none;
 }
 
+
 section {
     background: #ffffff;
-    width: 80%;
+    width: 70%;
     margin: auto;
     /*Grid*/
     display: grid;
@@ -43,27 +46,54 @@ section {
 section .door {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    justify-self: start;
+    align-self: end;
 }
 
 section .couch {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    justify-self: center;
+    align-self: end;
 }
 
 section .about {
+    width: 120px;
+    height: 140px;
+    background-image: url(img/about\ me.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+    justify-self: end;
 }
 
+section .about:hover {
+    background-image: url(img/about\ me-hover.svg);
+}
+
+
 section .phone {
+    width: 120px;
+    height: 230px;
+    background-image: url(img/telefono.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-column: 3 / 4;
     grid-row: 2 / 4;
+    justify-self: end;
+    align-self: end;
+}
+
+section .phone:hover {
+    background-image: url(img/telefono-hover.svg);
 }
 
 footer {
     background-image: url(img/footer.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100px;
     color: #63518A;
     /*Flex*/
     display: flex;
