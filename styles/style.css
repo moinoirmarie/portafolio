@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    color: #FFAFAF;
+}
+
 .hidden {
     display: none;
 }
@@ -17,6 +21,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Header */
 
 header {
     background: #ffffff;
@@ -45,14 +51,16 @@ button {
     background-size: cover;
 }
 
-section main {
+/* Home */
+
+.home main {
     width: 270px;
 	margin: auto;
 	overflow: hidden;
 	border-bottom: 12px solid #FA4444;
 }
 
-section main figure {
+.home main figure {
     position: absolute;
     top: 0;
     left: 50px;
@@ -66,17 +74,17 @@ section main figure {
     transition:all 0.3s ease-in-out;
 }
 
-section main > figure {
+.home main > figure {
     position: relative;
     left: 0 !important;
 }
 
-section main img {
+.home main img {
     display: block;
     width: 120px;
 }
 
-section main input {
+.home main input {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,13 +100,13 @@ section main input {
     appearance: none;
 }
 
-section main input:checked {
+.home main input:checked {
     width: 5px;
     left: auto;
     right: 0;
 }
 
-section main input:checked ~ figure {
+.home main input:checked ~ figure {
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
@@ -107,8 +115,7 @@ section main input:checked ~ figure {
     left: 120px;
 }
 
-
-section {
+.home {
     background: #ffffff;
     width: 70%;
     margin: auto;
@@ -118,21 +125,21 @@ section {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-section .door {
+.home .door {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     justify-self: start;
     align-self: end;
 }
 
-section .couch {
+.home .couch {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
     justify-self: center;
     align-self: end;
 }
 
-section .about {
+.home .about {
     width: 120px;
     height: 140px;
     background-image: url(img/about\ me.svg);
@@ -143,12 +150,11 @@ section .about {
     justify-self: end;
 }
 
-section .about:hover {
+.home .about:hover {
     background-image: url(img/about\ me-hover.svg);
 }
 
-
-section .phone {
+.home .phone {
     width: 120px;
     height: 230px;
     background-image: url(img/telefono.svg);
@@ -160,9 +166,39 @@ section .phone {
     align-self: end;
 }
 
-section .phone:hover {
+.home .phone:hover {
     background-image: url(img/telefono-hover.svg);
 }
+
+/* About */
+
+.aboutPage {
+    background: #ffffff;
+    width: 70%;
+    margin: auto;
+    color: #9D8FBC;
+}
+
+.aboutPage h2 {
+    padding: 0.5em 0 0.5em 0;
+    font-size: 2em;
+}
+
+.aboutPage p {
+    padding: 0 0 0.5em 0;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.aboutPage .gallery {
+    padding: 2em 0 2em 0;
+}
+
+.aboutPage .gallery div {
+    color: #ffffff;
+}
+
+/* Footer */
 
 footer {
     background-image: url(img/footer.svg);
