@@ -45,6 +45,10 @@ header nav {
     align-self: flex-end;
 }
 
+header nav a {
+    cursor: pointer;
+}
+
 button {
     background: none;
     border: none;
@@ -54,6 +58,16 @@ button {
     width: 40px;
     height: 40px;
     background-image: url(img/menu-full.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.emptyMenu {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/menu-empty.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;

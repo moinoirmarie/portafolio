@@ -18,10 +18,30 @@ aboutButton.addEventListener("click", showAboutScreen);
 
 const showMenu = () => {
     removeClassPerId("navMenu", "hidden");
+    removeClassPerId("emptyMenuBtn", "hidden");
+    addClassPerId("menuBtn", "hidden");
 }
 
 const menuButton = document.getElementById("menuBtn");
 menuButton.addEventListener("click", showMenu);
+
+const hideMenu = () => {
+    addClassPerId("navMenu", "hidden");
+    addClassPerId("emptyMenuBtn", "hidden");
+    removeClassPerId("menuBtn", "hidden");
+}
+
+const hideMenuButton = document.getElementById("emptyMenuBtn");
+hideMenuButton.addEventListener("click", hideMenu);
+
+const showContactScreen = () => {
+    removeClassPerId("contactScreen", "hidden");
+    addClassPerId("homeScreen", "hidden");
+    addClassPerId("aboutScreen", "hidden");
+};
+
+const phoneButton = document.getElementById("phoneBtn");
+phoneButton.addEventListener("click", showContactScreen);
 
 //Instagram Feed
 
