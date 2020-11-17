@@ -1,4 +1,4 @@
-//Variables
+// Remueve o agrega class por id
 
 const removeClassPerId = (id, clase) => {
     document.getElementById(id).classList.remove(clase);
@@ -8,13 +8,7 @@ const addClassPerId = (id, clase) => {
     document.getElementById(id).classList.add(clase);
 };
 
-const showAboutScreen = () => {
-    removeClassPerId("aboutScreen", "hidden");
-    addClassPerId("homeScreen", "hidden");
-};
-
-const aboutButton = document.getElementById("aboutBtn");
-aboutButton.addEventListener("click", showAboutScreen);
+// Mostrar y ocultar menu
 
 const showMenu = () => {
     removeClassPerId("navMenu", "hidden");
@@ -34,6 +28,21 @@ const hideMenu = () => {
 const hideMenuButton = document.getElementById("emptyMenuBtn");
 hideMenuButton.addEventListener("click", hideMenu);
 
+// Muestra "Sobre mí"
+
+const showAboutScreen = () => {
+    removeClassPerId("aboutScreen", "hidden");
+    addClassPerId("homeScreen", "hidden");
+};
+
+const aboutButton = document.getElementById("aboutBtn");
+aboutButton.addEventListener("click", showAboutScreen);
+
+const aboutButton02 = document.getElementById("aboutBtn02");
+aboutButton02.addEventListener("click", showAboutScreen);
+
+// Muestra "Contacto"
+
 const showContactScreen = () => {
     removeClassPerId("contactScreen", "hidden");
     addClassPerId("homeScreen", "hidden");
@@ -43,7 +52,36 @@ const showContactScreen = () => {
 const phoneButton = document.getElementById("phoneBtn");
 phoneButton.addEventListener("click", showContactScreen);
 
-//Instagram Feed
+const contactButton = document.getElementById("contactBtn02");
+contactButton.addEventListener("click", showContactScreen);
+
+// Muestra portafolio
+
+const showPortfolioHome = () => {
+    removeClassPerId("portfolioHome", "hidden");
+    addClassPerId("contactScreen", "hidden");
+    addClassPerId("homeScreen", "hidden");
+    addClassPerId("aboutScreen", "hidden");
+};
+
+const portfolioHomeButton = document.getElementById("cover");
+const portfolioHomeButton02 = document.getElementById("portfolioBtn");
+portfolioHomeButton.addEventListener("click", showPortfolioHome);
+portfolioHomeButton02.addEventListener("click", showPortfolioHome);
+
+// Volver al Home
+
+const goBackToHome = () => {
+    removeClassPerId("homeScreen", "hidden");
+    addClassPerId("contactScreen", "hidden");
+    addClassPerId("aboutScreen", "hidden");
+    addClassPerId("portfolioHome", "hidden");
+}
+
+const homeButton = document.getElementById("backToHome");
+homeButton.addEventListener("click", goBackToHome);
+
+// Instagram Feed
 
 (function(){
     var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;

@@ -9,11 +9,11 @@
 </head>
 <body class="container">
     <header>
-        <h1>Andrea <br/> Blasco</h1>
+        <h1 id="backToHome">Andrea <br/> Blasco</h1>
         <nav id="navMenu" class="hidden">
-            <a>mi portafolio</a>
-            <a id="aboutBtn02" class="about">sobre mi</a>
-            <a>contacto</a>
+            <a id="portfolioBtn">mi portafolio</a>
+            <a id="aboutBtn02">sobre mi</a>
+            <a id="contactBtn02">contacto</a>
         </nav>
         <button id="menuBtn" class="menu"></button>
         <button id="emptyMenuBtn" class="emptyMenu hidden"></button>
@@ -23,7 +23,7 @@
             <img class="door" src="styles/img/puerta.svg" width="165">
             <main name="portfolio">
                 <figure>
-                    <img class="portada" src="styles/img/portada.svg">
+                    <img id="cover" class="portada" src="styles/img/portada.svg">
                     <input type="radio" name="radio.set" checked="checked">
                     <figure>
                         <img class="aprende" src="styles/img/Aprende.svg">
@@ -66,18 +66,37 @@
 
     <section id="contactScreen" class=" hidden">
         <h2>Contáctame</h2>
-        <p>Puedes descargar mi CV actualizado <a href="#">aquí</a></p>
+        <p>Puedes descargar mi CV actualizado <a href="https://drive.google.com/file/d/1TN6z1uuK9e16_3ofn-__Z2FhUZ1YHJzj/view?usp=sharing">aquí</a></p>
+    </section>
+
+    <section id="portfolioHome" class="hidden">
+        <h2>Mi Portafolio</h2>
+        <figure>
+            <img src="styles/img/Sorority.svg">
+            <h4>Sorority</h4>
+        </figure>
+        
+        <figure>
+            <img src="styles/img/Aprende.svg">
+            <h4>Aprende</h4>
+        </figure>
+
+        <figure>
+            <img src="styles/img/Fiesta.svg">
+            <h4>Fiesta</h4>
+        </figure>
+
     </section>
 
     <footer>
         <div>
-            <a class="socialnet" name="instagram">
+            <a href="https://www.instagram.com/moinoirmarie/" class="socialnet" name="instagram">
                 <img src="styles/img/instagram.svg">
             </a>
-            <a class="socialnet" name="linkedin">
+            <a  href="https://www.linkedin.com/in/andreamblascor/" class="socialnet" name="linkedin">
                 <img src="styles/img/linkedin.svg">
             </a>
-            <a class="socialnet" name="github">
+            <a  href="https://github.com/moinoirmarie" class="socialnet" name="github">
                 <img src="styles/img/github.svg">
             </a>
         </div>
