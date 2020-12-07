@@ -33,6 +33,8 @@ hideMenuButton.addEventListener("click", hideMenu);
 const showAboutScreen = () => {
     removeClassPerId("aboutScreen", "hidden");
     addClassPerId("homeScreen", "hidden");
+    addClassPerId("portfolioHome", "hidden");
+    addClassPerId("contactScreen", "hidden");
 };
 
 const aboutButton = document.getElementById("aboutBtn");
@@ -47,6 +49,7 @@ const showContactScreen = () => {
     removeClassPerId("contactScreen", "hidden");
     addClassPerId("homeScreen", "hidden");
     addClassPerId("aboutScreen", "hidden");
+    addClassPerId("portfolioHome", "hidden");
 };
 
 const phoneButton = document.getElementById("phoneBtn");
@@ -88,3 +91,8 @@ homeButton.addEventListener("click", goBackToHome);
     i.src = "https://cdn.curator.io/published/3915a838-bab3-441e-bf74-c5278aa124bd.js";
     e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
+
+
+// Typeform
+
+(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
